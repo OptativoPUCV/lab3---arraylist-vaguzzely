@@ -107,3 +107,17 @@ arraylist.c:60:10: note: each undeclared identifier is reported only once for ea
 cc1: all warnings being treated as errors
 Compilation failed
 ab9b427
+Fri 31 Mar 2023 05:43:56 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:54:22: error: ‘ArrayList’ {aka ‘struct ArrayList’} has no member named ‘first’
+   54 |   ArrayList* size = l->first;
+      |                      ^~
+arraylist.c:56:10: error: assignment to ‘ArrayList *’ {aka ‘struct ArrayList *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   56 |     size = size->size++;
+      |          ^
+cc1: all warnings being treated as errors
+Compilation failed
+8b7e816

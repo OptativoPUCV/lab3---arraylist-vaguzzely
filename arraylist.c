@@ -51,11 +51,11 @@ void* get(ArrayList * l, int i){
   if (i < 0) {
     i = l->size + i;
   }
-  ArrayList* current = l->first;
+  ArrayList* size = l->first;
   for (int j = 0; j < i; j++) {
-    current = current->size++;
+    size = size->size++;
   }
-    return NULL;
+  return NULL;
 
   return current->data;
 }

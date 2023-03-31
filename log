@@ -89,3 +89,21 @@ arraylist.c:56:13: error: assignment to ‘ArrayList *’ {aka ‘struct ArrayLi
 cc1: all warnings being treated as errors
 Compilation failed
 1b36828
+Fri 31 Mar 2023 05:43:38 PM UTC: 
+ arraylist.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:54:22: error: ‘ArrayList’ {aka ‘struct ArrayList’} has no member named ‘first’
+   54 |   ArrayList* size = l->first;
+      |                      ^~
+arraylist.c:56:10: error: assignment to ‘ArrayList *’ {aka ‘struct ArrayList *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   56 |     size = size->size++;
+      |          ^
+arraylist.c:60:10: error: ‘current’ undeclared (first use in this function)
+   60 |   return current->data;
+      |          ^~~~~~~
+arraylist.c:60:10: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+ab9b427

@@ -75,3 +75,17 @@ arraylist.c:56:22: error: ‘ArrayList’ {aka ‘struct ArrayList’} has no me
       |                      ^~
 Compilation failed
 95ee7ba
+Fri 31 Mar 2023 05:43:08 PM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘get’:
+arraylist.c:54:25: error: ‘ArrayList’ {aka ‘struct ArrayList’} has no member named ‘first’
+   54 |   ArrayList* current = l->first;
+      |                         ^~
+arraylist.c:56:13: error: assignment to ‘ArrayList *’ {aka ‘struct ArrayList *’} from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+   56 |     current = current->size++;
+      |             ^
+cc1: all warnings being treated as errors
+Compilation failed
+1b36828

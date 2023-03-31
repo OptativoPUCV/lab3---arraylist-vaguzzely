@@ -53,7 +53,7 @@ void* get(ArrayList * l, int i){
   }
   ArrayList* current = l->first;
   for (int j = 0; j < i; j++) {
-    current = current->next;
+    current = current->size++;
   }
     return NULL;
 

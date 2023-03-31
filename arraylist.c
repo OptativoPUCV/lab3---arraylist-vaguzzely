@@ -5,9 +5,9 @@
 
 //normal array
 typedef struct ArrayList {
-    void **data;
-    int capacity;
-    int size;
+    void **data; // es un arreglo de datos data
+    int capacity;//capacidad
+    int size;//current
 } ArrayList;
 
 /* Implemente la función `ArrayList *createList()`. Esta función crea un nuevo dato de tipo ArrayList inicializando sus variables. Considere que la capacidad incial es de 2 casillas para el arreglo.

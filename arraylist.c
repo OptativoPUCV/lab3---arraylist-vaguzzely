@@ -48,7 +48,16 @@ void* get(ArrayList * l, int i){
   if (i >= l->size) {
     return NULL;
   }
+  if (i < 0) {
+    i = l->size + i;
+  }
+  ArrayList* current = l->first;
+  for (int j = 0; j < i; j++) {
+    current = current->next;
+  }
     return NULL;
+
+  return current->data;
 }
 
 int get_size(ArrayList * l){

@@ -279,3 +279,14 @@ arraylist.c:115:3: error: ‘list’ undeclared (first use in this function)
 arraylist.c:115:3: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 e6c400b
+Sun 02 Apr 2023 02:41:27 AM UTC: 
+ arraylist.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:117:21: error: ‘list’ undeclared (first use in this function)
+  117 |   l->data = realloc(list->data, (list->capacity * sizeof(void*)));
+      |                     ^~~~
+arraylist.c:117:21: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+9ee2f2b

@@ -79,8 +79,7 @@ void* pop(ArrayList * l, int i)
   int aux;
   for (aux = i; aux < l->size - 1; aux++) {
     l->data[aux] = l->data[aux+1];
-}
-  l->size--;
+  }
   // Retornar elemento eliminado
   return l->data[i];
 }

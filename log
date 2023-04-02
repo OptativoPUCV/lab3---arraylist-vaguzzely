@@ -345,3 +345,15 @@ Sun 02 Apr 2023 02:57:06 AM UTC:
  tests:  11|1
 total_score: 50/70
 62a3afa
+Sun 02 Apr 2023 02:58:52 AM UTC: 
+ arraylist.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:117:3: error: implicit declaration of function ‘Free’; did you mean ‘free’? [-Werror=implicit-function-declaration]
+  117 |   Free(l->data);
+      |   ^~~~
+      |   free
+cc1: all warnings being treated as errors
+Compilation failed
+ecf2f35

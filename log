@@ -148,3 +148,12 @@ Sun 02 Apr 2023 02:14:16 AM UTC:
  tests:  6|3
 total_score: 30/70
 f9f3593
+Sun 02 Apr 2023 02:18:32 AM UTC: 
+ arraylist.c | 17 ++++++++++++++---
+ 1 file changed, 14 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+arraylist.c:65:1: error: expected identifier or ‘(’ before ‘}’ token
+   65 | }
+      | ^
+Compilation failed
+7268273

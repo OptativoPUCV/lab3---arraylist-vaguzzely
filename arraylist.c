@@ -45,12 +45,23 @@ void append(ArrayList * l, void * data){
     > Si `i` es mayor a `size`, la función no debe hacer nada.*/
 
 void push(ArrayList * l, void * data, int i){
-  if (i > l->size){
-    l->data = realloc(l->data, (l-> capacity *2));
-    l->capacity = (l->capacity * 2);
+if (i > l->size) {
+        // i es mayor que el tamaño actual de la lista, no se puede insertar el elemento
+        return;
     }
-  l->data[l->size] = data;
-  l->size++;
+    if (l->size == l->capacity) {
+        // la lista está llena, se debe aumentar su capacidad
+        l->capacity *= 2;
+        l->data = realloc(l->data, l->capacity * sizeof(void*));
+    }
+    // mover los elementos siguientes una casilla a la derecha
+    for (int j = l->size; j > i; j--) {
+        l->data[j] = l->data[j-1];
+    }
+    // insertar el elemento en la posición i
+    l->data[i] = data;
+    l->size++;
+}
 }
   
 

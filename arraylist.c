@@ -54,11 +54,11 @@ if (i > l->size)
       l->data = realloc(l->data, (l-> capacity *2));
       l->capacity = (l->capacity * 2);
     }
-  int aux = 0
+    int aux = 0
     for (aux = l->size; aux > i; aux--) {
         l->data[aux] = l->data[aux-1];
     }
-    // insertar el elemento en la posición i
+    // insertar elemento en la posición i
     l->data[i] = data;
     l->size++;
 }

@@ -163,3 +163,26 @@ Sun 02 Apr 2023 02:18:38 AM UTC:
  tests:  8|2
 total_score: 40/70
 999972d
+Sun 02 Apr 2023 02:23:09 AM UTC: 
+ arraylist.c | 16 ++++++++--------
+ 1 file changed, 8 insertions(+), 8 deletions(-)
+In file included from test.c:5:
+arraylist.c: In function ‘push’:
+arraylist.c:58:5: error: expected ‘,’ or ‘;’ before ‘for’
+   58 |     for (aux = l->size; j > i; j--) {
+      |     ^~~
+arraylist.c:58:25: error: ‘j’ undeclared (first use in this function)
+   58 |     for (aux = l->size; j > i; j--) {
+      |                         ^
+arraylist.c:58:25: note: each undeclared identifier is reported only once for each function it appears in
+arraylist.c:58:35: error: expected ‘;’ before ‘)’ token
+   58 |     for (aux = l->size; j > i; j--) {
+      |                                   ^
+      |                                   ;
+arraylist.c:58:35: error: expected statement before ‘)’ token
+arraylist.c:57:7: error: unused variable ‘aux’ [-Werror=unused-variable]
+   57 |   int aux = 0
+      |       ^~~
+cc1: all warnings being treated as errors
+Compilation failed
+73d92e2

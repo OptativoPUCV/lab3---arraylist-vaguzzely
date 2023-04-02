@@ -367,3 +367,14 @@ Sun 02 Apr 2023 02:59:22 AM UTC:
  1 file changed, 2 deletions(-)
  tests:  0|0
 1dff771
+Sun 02 Apr 2023 03:01:27 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+arraylist.c: In function ‘clean’:
+arraylist.c:117:8: error: ‘l’ undeclared (first use in this function)
+  117 |   free(l->data);
+      |        ^
+arraylist.c:117:8: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+0ad5da9

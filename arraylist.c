@@ -112,15 +112,6 @@ int get_size(ArrayList * l){
 
 //remove elements
 void clean(ArrayList * l){    
-  for (int i = 0; i < l->size; i++)
-    {
-    free(l->data[i]);
-    }
-    // Reducir el tamaño del arreglo a su tamaño inicial
-  l->data = realloc(l->data, sizeof(void *) * 2);
-  // Reinicializar la capacidad y el tamaño de la lista
-  l->capacity = 2;
-  l->size = 0;
 }
 
 

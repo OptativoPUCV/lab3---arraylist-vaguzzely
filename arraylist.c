@@ -53,7 +53,7 @@ void push(ArrayList * l, void * data, int i){
   l->size++;
 }
   
-}
+
 
 /*Implemente la función `void* pop(ArrayList * l, int i)`. Esta función elimina **y retorna** el dato de la posición `i` de la lista. Valores negativos corresponden a los datos obtenidos desde el final al principio de la lista (vea la función get).
 

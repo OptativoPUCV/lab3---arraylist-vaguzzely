@@ -36,10 +36,22 @@ void append(ArrayList * l, void * data){
   l->size++;
 }
 
+/* Implemente la función `void push(ArrayList * l, void * data, int i)`. Esta función ingresa el dato en la `i`-ésima posición de la lista (`i=0` es la primera posición). 
+
+    > Si el arreglo está lleno, primero debe aumentar su capacidad al doble.
+
+    > Recuerde mover los elementos siguientes una casilla a la derecha.
+
+    > Si `i` es mayor a `size`, la función no debe hacer nada.*/
+
 void push(ArrayList * l, void * data, int i){
   
 }
 
+/*Implemente la función `void* pop(ArrayList * l, int i)`. Esta función elimina **y retorna** el dato de la posición `i` de la lista. Valores negativos corresponden a los datos obtenidos desde el final al principio de la lista (vea la función get).
+
+    > Recuerde que al eliminar un dato, debe mover los elementos que se encuentran a la derecha, una casilla hacia la izquierda
+*/
 void* pop(ArrayList * l, int i){
     return NULL;
 }
@@ -66,6 +78,8 @@ void* get(ArrayList * l, int i){
 int get_size(ArrayList * l){
     return l->size;
 }
+
+/*Implemente la función `void clean(ArrayList * list)`. Esta función inicializa la capacidad y tamaño de la lista a sus valores iniciales y reduce el arreglo `data` a su tamaño inicial (2).*/
 
 //remove elements
 void clean(ArrayList * l){

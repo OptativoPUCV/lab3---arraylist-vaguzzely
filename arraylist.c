@@ -22,10 +22,10 @@ ArrayList *createList(void) {
 }
 /*2. Implemente la función `void append(ArrayList * l, void * data)`. Esta función agrega el dato al final de la lista (es decir, en la posición `size`). 
 
-    > Si el arreglo está lleno aumente la capacidad al **doble** usando la función `realloc` así:
+  > Si el arreglo está lleno aumente la capacidad al **doble** usando la función `realloc` así:
     `data = realloc(data, nueva_capacidad)`
 
-    > Recuerde aumentar el valor de la variable `size`.
+  > Recuerde aumentar el valor de la variable `size`.
 */
 void append(ArrayList * l, void * data){
   if (l->size == l->capacity){
@@ -59,7 +59,6 @@ for (aux = l->size; aux > i; aux--)
 {
 l->data[aux] = l->data[aux-1];
 }
-// insertar elemento en la posición i
 l->data[i] = data;
 l->size++;
 }

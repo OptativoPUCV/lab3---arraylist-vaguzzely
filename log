@@ -290,3 +290,8 @@ arraylist.c:117:21: error: ‘list’ undeclared (first use in this function)
 arraylist.c:117:21: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 9ee2f2b
+Sun 02 Apr 2023 02:41:38 AM UTC: 
+ arraylist.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  0|0
+930d695

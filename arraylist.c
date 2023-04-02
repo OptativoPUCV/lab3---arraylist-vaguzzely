@@ -114,7 +114,7 @@ int get_size(ArrayList * l){
 void clean(ArrayList * l){
   l->size = 0;
   l->capacity = 2;
-  l->data = realloc(list->data, (list->capacity * sizeof(void*)));
+  l->data = realloc(l->data, (l->capacity * sizeof(void*)));
 }
 
 

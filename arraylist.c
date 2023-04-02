@@ -114,7 +114,7 @@ int get_size(ArrayList * l){
 //remove elements
 void clean(ArrayList * l)
 {
-  Free(l->data);
+  free(l->data);
   // Reducir el tamaño del arreglo a su tamaño inicial
   l->data = malloc(sizeof(void *) * 2);
   // Reinicializar la capacidad y el tamaño de la lista

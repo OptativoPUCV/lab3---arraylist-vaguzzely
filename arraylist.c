@@ -55,8 +55,8 @@ if (i > l->size)
       l->capacity = (l->capacity * 2);
     }
   int aux = 0
-    for (aux = l->size; j > i; j--) {
-        l->data[j] = l->data[j-1];
+    for (aux = l->size; aux > i; aux--) {
+        l->data[aux] = l->data[aux-1];
     }
     // insertar el elemento en la posición i
     l->data[i] = data;

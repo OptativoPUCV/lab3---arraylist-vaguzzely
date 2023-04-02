@@ -339,3 +339,9 @@ test.c:(.text+0x51b): undefined reference to `clean'
 collect2: error: ld returned 1 exit status
 Compilation failed
 b8e594a
+Sun 02 Apr 2023 02:57:06 AM UTC: 
+ arraylist.c | 3 +++
+ 1 file changed, 3 insertions(+)
+ tests:  11|1
+total_score: 50/70
+62a3afa

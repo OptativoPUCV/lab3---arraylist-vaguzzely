@@ -54,7 +54,7 @@ if (i > l->size)
       l->data = realloc(l->data, (l-> capacity *2));
       l->capacity = (l->capacity * 2);
     }
-    int aux = 0
+    int aux
     for (aux = l->size; aux > i; aux--) {
         l->data[aux] = l->data[aux-1];
     }

@@ -48,19 +48,20 @@ void push(ArrayList * l, void * data, int i){
 if (i > l->size) 
 {
   return;
-    }
-    if (l->size == l->capacity)
-    {
-      l->data = realloc(l->data, (l-> capacity *2));
-      l->capacity = (l->capacity * 2);
-    }
-    int aux;
-    for (aux = l->size; aux > i; aux--) {
-        l->data[aux] = l->data[aux-1];
-    }
-    // insertar elemento en la posición i
-    l->data[i] = data;
-    l->size++;
+}
+if (l->size == l->capacity)
+{
+  l->data = realloc(l->data, (l-> capacity *2));
+  l->capacity = (l->capacity * 2);
+}
+int aux;
+for (aux = l->size; aux > i; aux--) 
+{
+l->data[aux] = l->data[aux-1];
+}
+// insertar elemento en la posición i
+l->data[i] = data;
+l->size++;
 }
 /*Implemente la función `void* pop(ArrayList * l, int i)`. Esta función elimina **y retorna** el dato de la posición `i` de la lista. Valores negativos corresponden a los datos obtenidos desde el final al principio de la lista (vea la función get).
 
